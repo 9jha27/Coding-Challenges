@@ -1,4 +1,5 @@
 # Coding-Challenges
 
-## Tip Calculator
-Created using HTML, CSS, JavaScript, jQuery
+## FAQ Accordion Card
+
+## Profile Card Component
