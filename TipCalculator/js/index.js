@@ -1,40 +1,17 @@
 //calculateTip function to display in total tip amount
+
+function calculateTip (val){
+    var mealCost = $("#mealCost");
+    var totalTip = parseFloat(mealCost.val()) * val;
+    console.log(val);
+    return $("#totalTip").val(totalTip);
+}
+
+//jQuery
 $(document).ready(function(){
     const input = $("#totalTip");
     const mealCost = $("#mealCost");
-    $("#tip15").click(function(){ //
-        
-        var totalTip = (mealCost.val() * .15).toFixed(2);
-
-        input.val(totalTip);
-        console.log(totalTip);
-        console.log(typeof(totalTip));
-    })
-    $("#tip18").click(function(){ //
-        
-        var totalTip = (mealCost.val() * .18).toFixed(2);
-
-        input.val(totalTip);
-        console.log(totalTip);
-        console.log(typeof(totalTip));
-    })
-    $("#tip20").click(function(){ //
-        
-        var totalTip = (mealCost.val() * .20).toFixed(2);
-
-        input.val(totalTip);
-        console.log(totalTip);
-        console.log(typeof(totalTip));
-    })
-    $("#tip25").click(function(){ //
-        
-        var totalTip = (mealCost.val() * .25).toFixed(2);
-
-        input.val(totalTip);
-        console.log(totalTip);
-        console.log(typeof(totalTip));
-    })
-
+    
     //Clear Button Function
     $("#clear").click(function(){
         $("#mealCost").val("");
@@ -74,6 +51,8 @@ $(document).ready(function(){
     
 })
 
+
+//input numbers only with decimal
 $(function(){
     $("input[name='numonly']").on('input', function(e){
         $(this).val($(this).val().replace(/[^0-9],'.'/g, ''))
