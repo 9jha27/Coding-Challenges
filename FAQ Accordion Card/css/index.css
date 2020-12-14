@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: hsl(273, 75%, 66%);
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to bottom, hsl(273, 75%, 55%), hsl(240, 73%, 65%));
+    background: -moz-linear-gradient( to bottom,hsl(273, 75%, 55%),hsl(240, 73%, 65%));
+    background: -ms-linear-gradient( to bottom, hsl(273, 75%, 55%), hsl(240, 73%, 65%));
+    background: -o-linear-gradient( to bottom, hsl(273, 75%, 55%),hsl(240, 73%, 65%));
+    background: linear-gradient( to bottom, hsl(273, 75%, 55%), hsl(240, 73%, 65%));
+}
+
+body { 
+    font-size: 1rem; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+#main {
+    border-radius: 30px;
+    margin-top: 15vh;
+    margin-left: 20vw;
+    background-color: white;
+    float: left;
+    height: 60vh;
+    width: 60vw;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/******Image overlay*******/
+.img {
+    position: relative;
+
+}
+ .pattern {
+    position: absolute;
+    max-width: 60vw;
+    top: 150px;
+    left: 200px;
+    z-index: 1
+}
+.boximg{
+    position: sticky;
+    top: 330px;
+    left: ;
+    z-index: 3
+}
+
+
+
+.ladyimg{
+    position: relative;
+    /* left: 333px;
+    top: 220px; */
+    z-index: 2;
+} 
+
+ .faq {
+    margin-top: 5em;
+} 
+
+/* ****Media Query****
+@media view */
